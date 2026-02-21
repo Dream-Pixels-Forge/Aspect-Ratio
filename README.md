@@ -1,3 +1,4 @@
+check this link for more https://extensions.blender.org/search/?q=Vectart
 # Advanced Aspect Ratio Manager
 
 A Blender addon for managing aspect ratios and camera settings with an intuitive interface and quick access pie menu.
