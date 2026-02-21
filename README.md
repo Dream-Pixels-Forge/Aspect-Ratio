@@ -2,6 +2,9 @@
 
 A Blender addon for managing aspect ratios and camera settings with an intuitive interface and quick access pie menu.
 
+<img width="1920" height="1080" alt="Screenshot 2026-02-21 193801" src="https://github.com/user-attachments/assets/f280d33a-94f9-49d6-b016-6a1951228a64" />
+
+
 ![Screenshot](https://github.com/user-attachments/assets/5224aace-6bbe-48e0-8384-13f334c7bb37)
 
 ## Features
