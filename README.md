@@ -1,10 +1,11 @@
 # Advanced Aspect Ratio Manager
+
 A Blender addon for managing aspect ratios and camera settings with an intuitive interface and quick access pie menu.
 
-![Screenshot 2025-03-17 171718](https://github.com/user-attachments/assets/5224aace-6bbe-48e0-8384-13f334c7bb37)
-
+![Screenshot](https://github.com/user-attachments/assets/5224aace-6bbe-48e0-8384-13f334c7bb37)
 
 ## Features
+
 - Comprehensive aspect ratio presets for Cinema, Photography, and Social Media
 - Camera lens focal length presets
 - Quick access pie menu (Shift+Alt+R)
@@ -13,25 +14,30 @@ A Blender addon for managing aspect ratios and camera settings with an intuitive
 - Real-time aspect ratio overlay
 - Resolution adjustment options
 
-### Supported Aspect Ratios
-#### Cinema
+## Supported Aspect Ratios
+
+### Cinema
+
 - 2.39:1 (Anamorphic Widescreen)
 - 1.85:1 (Standard Widescreen)
 - 1.43:1 (IMAX)
 
-#### Photography
+### Photography
+
 - 3:2 (Standard DSLR)
 - 4:3 (Medium Format)
 - 1:1 (Square Format)
 - 16:9 (HD Video)
 
-#### Social Media
+### Social Media
+
 - 9:16 (Instagram Story/TikTok)
 - 4:5 (Instagram Portrait)
 - 1:1 (Instagram Square)
 - 16:9 (YouTube)
 
 ### Lens Presets
+
 - 14mm (Ultra Wide Angle)
 - 24mm (Wide Angle)
 - 35mm (Standard Wide)
@@ -41,23 +47,38 @@ A Blender addon for managing aspect ratios and camera settings with an intuitive
 - 200mm (Long Telephoto)
 
 ## Installation
-1. Download the latest release
+
+### From Release
+
+1. Download the latest `.zip` release
 2. Open Blender
-3. Go to Edit > Preferences > Add-ons
-4. Click "Install" and select the downloaded .zip file
+3. Go to **Edit > Preferences > Add-ons**
+4. Click **Install** and select the downloaded `.zip` file
 5. Enable the addon by checking the checkbox
 
+### From Source
+
+1. Clone or download this repository
+2. Copy the `aspect_ratio` folder to your Blender addons directory:
+   - Windows: `%APPDATA%\Blender Foundation\Blender\4.x\scripts\addons\`
+   - macOS: `~/Library/Application Support/Blender/4.x/scripts/addons/`
+   - Linux: `~/.config/blender/4.x/scripts/addons/`
+3. Enable the addon in **Edit > Preferences > Add-ons**
+
 ## Usage
+
 ### Pie Menu
-1. Press `Shift+Alt+R` in the 3D View
+
+1. Press `Shift+Alt+R` in the 3D Viewport
 2. Move cursor to desired option
 3. Select from dropdown menus for detailed options
 
-   
-![Screenshot 2025-03-17 171656](https://github.com/user-attachments/assets/0bc75d14-607d-44bc-8cef-8c592e7f584a)
+![Pie Menu](https://github.com/user-attachments/assets/0bc75d14-607d-44bc-8cef-8c592e7f584a)
 
 ### Panel Interface
-Located in Properties > Render > Aspect Ratio
+
+Located in **Properties > Render > Aspect Ratio**
+
 - Set aspect ratios
 - Adjust camera display settings
 - Configure composition guides
@@ -65,36 +86,50 @@ Located in Properties > Render > Aspect Ratio
 - View current resolution and ratio
 
 ### Camera Settings
+
 - Grid overlay
 - Composition guides
 - Passepartout options
 - Camera name display
 
 ## Requirements
-- Blender 3.0.0 or newer
 
-## Author
-Dimona Patrick
+- Blender 4.2.0 or newer
 
-## Version
-1.3
+## Structure
 
-## Category
-Render
+```
+aspect_ratio/
+├── __init__.py              # Main entry point
+├── operators.py             # Set ratio and lens operators
+├── panels.py               # Render panel
+├── menus.py                # Pie menu and dropdowns
+├── properties.py           # Settings and presets
+├── keymap.py               # Keyboard shortcuts
+├── blender_manifest.toml   # Extension manifest
+└── LICENSE                 # GPL-3 license
+```
 
-## License
-[GPL-3 Li]
+## Version History
 
-## Support
-[dream.pixels.forge@gmail.com]
+### 1.4.0
 
+- Refactored to module structure
+- Added blender_manifest.toml for extensions
+- Updated to Blender 4.2+ API
+- Fixed missing SetLens operator
 
-## Changelog
 ### 1.3
+
 - Added pie menu for quick access
 - Integrated lens preset system
 - Added dropdown menus for better organization
 - Improved camera display settings
 
+## License
 
+[GPL-3.0-or-later](LICENSE)
 
+## Author
+
+Dimona Patrick, Dream-Pixels-Forge
